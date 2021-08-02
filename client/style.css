@@ -1,0 +1,313 @@
+/**************/
+/* CSS RESET */
+/*************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*******************/
+/* GENERAL STYLING */
+/*******************/
+
+body {
+    /* background gradient -> */
+    background-color: ghostwhite;
+    background: #000046; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #1cb5e0,
+        #000046
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #1cb5e0,
+        #000046
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* <- */
+    font-family: sans-serif;
+    text-align: center;
+    padding: 1rem;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    background-color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    background-color: #010149;
+    border: 3px solid #010149;
+    color: #1eceff;
+}
+
+.welcome-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #1eceff;
+    font-family: sans-serif;
+    font-family: "Dancing Script", cursive;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.banner-top {
+    min-height: 250px;
+}
+
+.banner-top button {
+    display: block;
+    margin: auto;
+    margin-top: 0.5rem;
+}
+
+.logo {
+    width: 200px;
+}
+
+.logo a {
+    display: block;
+    padding-top: 1rem;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 0.35rem;
+}
+
+.input-container {
+    margin-bottom: 1rem;
+}
+
+.input-container div {
+    margin-bottom: 0.5rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+}
+
+.error-message {
+    color: red;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-img {
+    width: 100px;
+    margin-top: 2.5rem;
+}
+
+.uploader {
+    background-color: orange;
+    background: #000046; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #1cb5e0,
+        #000046
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #1cb5e0,
+        #000046
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* <- */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.uploader span {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 3rem;
+}
+
+.uploader div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-flex div {
+    text-align: left;
+}
+
+.margin-left-3 {
+    margin-left: 3rem;
+}
+
+.profile-img-big {
+    width: 200px;
+    border: 1px dashed black;
+}
+
+textarea {
+    width: 100%;
+    height: 7.5rem;
+}
+
+.other-user-img {
+    width: 100px;
+}
+
+ul {
+    list-style: none;
+}
+
+.chat-room {
+    max-width: 75%;
+    margin: 0.5rem auto;
+}
+
+.chat-room ul li {
+    padding: 0.5rem;
+    border: 1px solid #000046;
+    /* margin: 0.5rem auto; */
+    background-color: #a5e1f1;
+}
+
+.chat-room a {
+    text-decoration: none;
+    color: black;
+}
+
+.chat-room .other-user-img {
+    width: 50px;
+}
+
+.chat-messages {
+    height: 700px;
+    overflow-y: auto;
+}
+
+.navbar {
+    align-items: flex-start;
+}
+
+.navbar a {
+    transition: 0.5s;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+    /* padding: 1rem; */
+    /* margin-top: 2rem; */
+    border-radius: 10px;
+    background-color: #1eceff;
+    background-color: #010149;
+    border: 3px solid #010149;
+    color: #010149;
+    color: #1eceff;
+    margin: 0 1rem;
+}
+
+.navbar a:hover {
+    transition: 0.5s;
+    background-color: #3a3ad4;
+    background-color: #0f9fc7;
+    border: 3px solid #010149;
+    color: #1eceff;
+    color: #010149;
+}
+
+button {
+    transition: 0.5s;
+    background-color: orange;
+    border-radius: 10px;
+    background-color: #010149;
+    background-color: #1eceff;
+    background-color: #10955e;
+    background-color: #24ca85;
+    border: 3px solid #010149;
+    border: 3px solid #24ca85;
+    /* border: 3px solid #10955e; */
+    outline: none;
+    color: #1eceff;
+    color: #010149;
+}
+
+button:hover {
+    transition: 0.5s;
+    background-color: #24ca85;
+    background-color: #10955e;
+    cursor: pointer;
+}
+
+.red-button {
+    background-color: #c50c15;
+    background-color: #77060c;
+    border: 3px solid #010149;
+    border: 3px solid #c50c15;
+    border: 3px solid #83060d;
+    /* border: 3px solid #10955e; */
+    outline: none;
+    color: #010149;
+    color: #1eceff;
+}
+
+.red-button:hover {
+    background-color: #c50c15;
+}
+
+.p-style-1 {
+    background-color: #1eceff;
+    padding: 0.25rem 0.35rem;
+    border-radius: 5px;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.transparent {
+    color: transparent;
+}
+
+.welcome-links {
+    color: #24ca85;
+    /* font-weight: bolder; */
+    text-decoration: underline;
+}
